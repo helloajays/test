@@ -1,0 +1,141 @@
+1002  rpm -qa | grep -i samba*
+ 1003  yum install samba*
+ 1004  service vsftpd start
+ 1005  chkconfig vsftpd on
+ 1006  yum install samba*
+ 1007  yum history
+ 1008  yum history info 15
+ 1009  cd /etc/samba/
+ 1010  ls
+ 1011  cat smb.conf.example
+ 1012  ls
+ 1013  vi smb.conf
+ 1014  cat smb.conf.example
+ 1015  ls
+ 1016  vim smb.conf
+ 1017  mkdir /imp
+ 1018  ls -ld /imp
+ 1019  ls
+ 1020  cd
+ 1021  ls -lZ /imp
+ 1022  sestatus
+ 1023  getenforce
+ 1024  ls -ldZ /imp
+ 1025  chmod 777 /imp
+ 1026  ls -ldZ /imp
+ 1027  cat /etc/passwd
+ 1028  useradd bredon
+ 1029  passwd bredon
+ 1030  id bredon
+ 1031  smbpasswd -a bredon
+ 1032  pdbedit -L
+ 1033  vi /etc/samba/smb.conf
+ 1034  systemctl status smb
+ 1035  systemctl status nmb
+ 1036  systemctl status nmb || systemctl status nmb
+ 1037  systemctl restart nmb || systemctl restart smb
+ 1038  alias
+ 1039  alias br='systemctl restart nmb || systemctl restart smb'
+ 1040  br
+ 1041  alias
+ 1042  testparm
+ 1043  vi /etc/samba/smb.conf
+ 1044  testparm
+ 1045  vi /etc/samba/smb.conf
+ 1046  testparm
+ 1047  vi /etc/samba/smb.conf
+ 1048  testparm
+ 1049  br
+ 1050  ifconfig | more
+ 1051  netstat -lntua
+ 1052  netstat -lntuap
+ 1053  netstat -lntuap | grep -i samba
+ 1054  netstat -lntuap | grep -i smb
+ 1055  netstat -lntuap | more
+ 1056  service smb status
+ 1057  service smb start
+ 1058  service nmb start
+ 1059  service smb status
+ 1060  service nmb status
+ 1061  netstat -lntua | more
+ 1062  netstat -lntuap | grep -i 139
+ 1063  service firewalld stop
+ 1064  service firewalld start
+ 1065  firewall-cmd --add-service=samba --permanent
+ 1066  firewall-cmd --list-all
+ 1067  firewall-cmd --reload
+ 1068  firewall-cmd --list-all
+ 1069  setenforce 0
+ 1070  service smb restart;service nmb restart
+ 1071  service smb restart ; service nmb restart
+ 1072   service nmb restart
+ 1073   service stop restart
+ 1074   service nmb stop
+ 1075   service nmb start
+ 1076  smbpasswd -a
+ 1077  smbpasswd -a bredon
+ 1078  vi /etc/samba/smb.conf
+ 1079  id bredon
+ 1080  service smb stop
+ 1081  service smb start
+ 1082  service nmb restart
+ 1083  chcon –t samba_share_t /imp
+ 1084  chcon -i samba_share_t /imp
+ 1085  chcont -i samba_share_t /imp
+ 1086  chcon -t samba_share_t /imp
+ 1087  chcon -R -t samba_share_t /imp
+ 1088  service smb stop
+ 1089  service smb start
+ 1090  service nmb stop
+ 1091  service nmb start
+ 1092  cd /var/log
+ 1093  ls
+ 1094  cd samba/
+ 1095  ls
+ 1096  ls -lty
+ 1097  ls -lrt
+ 1098  tail -f log.smbd
+ 1099  vi /etc/samba/smb.conf
+ 1100  service smb stop
+ 1101  service nmb stop
+ 1102  service nmb start
+ 1103  service smb start
+ 1104  ls
+ 1105  cd /imp
+ 1106  ls
+ 1107  touch file{1..999}
+ 1108  smbclient -L 192.168.0.11
+ 1109  smbclient -L 192.168.0.11 -u bredon
+ 1110  smbclient -L 192.168.0.11 -U bredon
+ 1111  findsmb
+ 1112  smbclient –L 192.168.122.1
+ 1113  smbclient -L 192.168.122.11
+ 1114  smbclient -L 192.168.122.1 -U bredon
+ 1115  smbclient -L 192.168.0.11 -U bredon
+ 1116  smbclient //192.168.0.11/data -u bredon
+ 1117  smbclient //192.168.0.11/data -U bredon
+ 1118  rpm -qa | grep -i cifs
+ 1119  mount -t cifs //192.168.0.11/data /mnt -o user=bredon
+ 1120  rpm -ivh cifs
+ 1121  yum install cifs
+ 1122  yum install cifs*
+ 1123  mount -t cifs //192.168.0.11/data /mnt -o user=bredon
+ 1124  df -hT
+ 1125  cd /mnt
+ 1126  ls
+ 1127  touch smb{1..99}
+ 1128  ls
+ 1129  cd
+ 1130  df -hT
+ 1131  umount /mnt
+ 1132  vi /etc/fstab
+ 1133  mount -a
+ 1134  df -hT
+ 1135  history
+ 1136  mount -t cifs //192.168.0.2/test /mnt -o user=ajay
+ 1137  mount -t cifs //192.168.0.2/test /mnt -o user=Admin
+ 1138  df -hT
+ 1139  cd /mnt
+ 1140  touch file{1..99}
+ 1141  history
+[root@qa mnt]#
